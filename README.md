@@ -46,7 +46,7 @@ THEN I can save my initials and my score
 ## Screenshots
 *Title Here
     *Description Here
-![](./assets/Images/1.png)
+![](./assets/)
 
 ## Made With
 

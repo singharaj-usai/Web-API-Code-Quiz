@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Add a white background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #7c7c7c;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.alert .alert-link {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.alert-warning {
+    background-color: #0d8aff;
+    color: #f2f2f2;
+    justify-content: center;
+}
+
+.alert {
+    padding: 15px;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14;
+    line-height: 1.5;
+}
+
+.center {
+    text-align: center;
+}
+
