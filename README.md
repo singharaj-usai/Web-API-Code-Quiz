@@ -15,7 +15,7 @@ Create a code quiz that is powered by JavaScript that features dynamically updat
 
 ## Summary
 
-This week's challenge will be a Code Quiz challenge using JavaScript to run the quizes that stores high scores. When the user clicks the start button, the quiz's timer starts and they're presented with a question that if they answer incorrectly, the timer is subtracted from the clock. When the timer reaches -, the game is finished and saves your score.
+This week's challenge will be a Code Quiz challenge using JavaScript to run the quizes that stores high scores. When the user clicks the start button, the quiz's timer starts and they're presented with a question that if they answer incorrectly, the timer is subtracted from the clock. When the timer reaches 0 or if all the questions are answered, the game is finished and saves your score.
 
 ## Links
 

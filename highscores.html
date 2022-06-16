@@ -2,10 +2,11 @@
 <html lang="en-us">
 
     <head>
-        <title>Singharaj's Code Quiz Challenge</title>
+        <title>High Score</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./Develop/css/style.css">
+        <link rel="stylesheet" href="./Develop/css/highscores.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="description" content="Singharaj's Code Quiz Challenge For MSU Coding Bootcamp">
@@ -31,13 +32,12 @@
         </div>
         <br>
         <div class="container">
-            <div id="home" class="flex-column flex-center">
-                <h1>Press "Start" to take the coding quiz!</h1>
-                <!--The buttons when clicked redirects you to a new page because of separate html pages.-->
-                <a href="quiz.html" class="btn" id="count" >Start</a>
-                <a href="highscores.html" id="highscores-btn" class="btn">Highscores</a>
-                </div>
+            <div id="highScores" class="flex-center flex-column"> 
+                <h1 id="finalScore">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+                <a href="index.html" class="btn">Go Home</a>
             </div>
+        </div>
             <br>
             <footer>
                 <div class="footer">
@@ -46,7 +46,7 @@
                         </p>
                 </div>
             </footer>
-            <script src="./Develop/js/highscore.js"></script>
+            <script src="./Develop/js/highscores.js"></script>
     </body>
 
 </html>

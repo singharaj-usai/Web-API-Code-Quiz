@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <title>Code Quiz Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./Develop/css/style.css">
+        <link rel="stylesheet" href="./Develop/css/quiz.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Singharaj's Code Quiz Challenge For MSU Coding Bootcamp">
+        <meta name="keywords" content="Bootcamp, MSU, Michigan State, Michigan State University, Code Quiz, Quiz Challenge, Web API Challenge">
+        <meta name="author" content="Singharaj Usai">
+
+    </head>
+
+    <body>
+        <div>
+            <div class="topnav">
+                <!--Top navigation bar that redirects to home page-->
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+        
+        <div class="alert alert-warning center">
+            <b style="color:white!important">
+            Note
+            </b> - My JavaScript Code Quiz Challenge Assignment. 
+            <a class="alert-link" href="https://github.com/singharaj-usai/Web-API-Code-Quiz">
+            Check out the repository!
+            </a>
+        </div>
+        <br>
+        <div class="container">
+            <div id="game" class="justify-center flex column">
+                <!--the hud shows your progress through the quiz on the left, and the timer and score on the right -->
+                <div id="hud">
+                    <div class="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                    <div class="hud-item">
+                        <h3 id="time-left"></h3>
+                        <p class="hud-prefix">
+                            Score
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+                <h1 id="question">Question 1 goes here</h1>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
+        </div>
+            <br>
+            <footer>
+                <div class="footer">
+                    <!--Top navigation bar that redirects to home page-->
+                    <p>Created by Singharaj Usai
+                        </p>
+                </div>
+            </footer>
+            <script src="./Develop/js/quiz.js"></script>
+    </body>
+
+</html>
