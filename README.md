@@ -44,24 +44,24 @@ WHEN the game is over
 THEN I can save my initials and my score
 
 ## Screenshots
-*Home Page
-    *Here you are introduced to the home screen where you are given a Start button in order to start the quiz, and a High Score button to view your high scores that you have saved.
+* Home Page
+    * Here you are introduced to the home screen where you are given a Start button in order to start the quiz, and a High Score button to view your high scores that you have saved.
 ![](./Assets/1.png)
 
-*Quiz Page
-    *In the quiz page, you are given 10 questions to answer about HTML, CSS and Javascript coding that you have to answer in 100 seconds.
+* Quiz Page
+    * In the quiz page, you are given 10 questions to answer about HTML, CSS and Javascript coding that you have to answer in 100 seconds.
 ![](./Assets/2.png)
 
-*Timer Subtract
-    *If a question is answered incorrectly, the timer is reduced by 10 seconds.
+* Timer Subtract
+    * If a question is answered incorrectly, the timer is reduced by 10 seconds.
 ![](./Assets/3.png)
 
-*Enter Nickname
-    *When the quiz is finished, you are prompted to type in a nickname to save your high score and you are shown what your score is as well.
+* Enter Nickname
+    * When the quiz is finished, you are prompted to type in a nickname to save your high score and you are shown what your score is as well.
 ![](./Assets/4.png)
 
-*Leaderboard
-    *You can view your high score in the leaderboards with your nickname and the score you received.
+* Leaderboard
+    * You can view your high score in the leaderboards with your nickname and the score you received.
 ![](./Assets/5.png)
 
 
