@@ -18,8 +18,6 @@
 
 ## Links
 
-[Video instruction](https://drive.google.com/file/d/1r_J3VWJJ394j-5GeDmFjEVjEytLJPj8U/view?usp=sharing)
-
 Repository URL: https://github.com/singharaj-usai/Web-API-Code-Quiz
 
 ## Made With
