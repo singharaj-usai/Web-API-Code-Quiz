@@ -28,7 +28,7 @@
                 </div>
                 <ul class="text-sm mt-5 hidden md:block" id="menu">
                     <li class="text-gray-700 font-bold py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-red-500">
+                        <a href="index.html" class="px-4 flex justify-end border-r-4 border-red-500">
                             <span>Home</span>
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -68,62 +68,68 @@
 
         <main class="px-16 py-6 bg-gray-100 md:col-span-6">
             <header>
+                <div class="flex justify-center md:justify-end">
+                    <!--timer id for js-->
+                    <div id="timer" class="btn text-blue-500 border-blue-500 border-2 hover:bg-blue-300 hover:text-white transition ease-out duration-200"> 60 </div>
+                </div>
                 <h2 class="text-gray-700 text-5xl font-semibold">Web API Code Quiz</h2>
                 <h3 class="text-2xl font-semibold">For Web Dev Nerds</h3>
             </header>
 
             <h4 class="text-center font-bold mt-12 pb-2 border-b border-gray-200">JavaScript Quiz</h4>
-            <!--question-title class for JavaScript-->
+            <!--question-title id for JavaScript-->
             <h5 id="question-title" class="question-title text-center font-bold mt-12 pb-2 border-b border-gray-200"></h5>
             <div class="flex justify-center">
                 <div class="mt-6 grid  lg:grid-cols-3 gap-5">
-                    <div class="w-64 mt-3">
+                    
+                    <div class="w-64 mt-2">
                         <!--cards go here-->
                         <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
                             <div class="m-4">
-                                <!--class="question-title" in the JavaScript file-->
+                                <!--id="question-title" in the JavaScript file-->
                                 <div id="question-title" class="question-title text-center"></div>
                             </div>
                             <div class="m-2 flex justify-center">
-                                <a href="#"
-                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                <div
+                                    id="choices"
+                                    class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                     <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
                                     Answer
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-64 mt-3">
+                    <div class="w-64 mt-2">
                         <!--cards go here-->
                         <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
                             <div class="m-4">
-                                <!--class="question-title" in the JavaScript file-->
+                                <!--id="question-title" in the JavaScript file-->
                                 <div id="question-title" class="question-title text-center"></div>
                             </div>
                             <div class="m-2 flex justify-center">
-                                <a href="#"
-                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                <div
+                                    class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                     <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
                                     Answer
-                                </a>
+                            </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-64 mt-3">
+                    <div class="w-64 mt-2">
                         <!--cards go here-->
                         <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
                             <div class="m-4">
-                                <!--class="question-title" in the JavaScript file-->
+                                <!--id="question-title" in the JavaScript file-->
                                 <div id="question-title" class="question-title text-center"></div>
                             </div>
                             <div class="m-2 flex justify-center">
-                                <a href="#"
-                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                <div
+                                    class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                     <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
                                     Answer
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
