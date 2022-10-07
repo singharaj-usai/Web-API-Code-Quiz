@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web API Code Quiz</title>
+    <title>Quiz Page</title>
     <link rel="stylesheet" href="./Develop/css/style.css">
 </head>
 
@@ -73,31 +73,61 @@
             </header>
 
             <h4 class="text-center font-bold mt-12 pb-2 border-b border-gray-200">JavaScript Quiz</h4>
+            <!--question-title class for JavaScript-->
+            <h5 id="question-title" class="question-title text-center font-bold mt-12 pb-2 border-b border-gray-200"></h5>
             <div class="flex justify-center">
-                <div class="w-64 mt-6">
-                    <!--cards go here-->
-                    <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
-                        <img src="./Develop/public/img/R.jfif" alt="curry" class="w-full h-32 sm:h-auto object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Web API Code Quiz</span>
-                            <span class="block text-gray-500 text-sm">By Singharaj Usai</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>60 Secs</span>
-                        </div>
-                        <div class="m-2 flex justify-center">
-                            <a href="quiz.html"
-                                class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
-                                Start Quiz
-                            </a>
+                <div class="mt-6 grid  lg:grid-cols-3 gap-5">
+                    <div class="w-64 mt-3">
+                        <!--cards go here-->
+                        <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
+                            <div class="m-4">
+                                <!--class="question-title" in the JavaScript file-->
+                                <div id="question-title" class="question-title text-center"></div>
+                            </div>
+                            <div class="m-2 flex justify-center">
+                                <a href="#"
+                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
+                                    Answer
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="w-64 mt-3">
+                        <!--cards go here-->
+                        <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
+                            <div class="m-4">
+                                <!--class="question-title" in the JavaScript file-->
+                                <div id="question-title" class="question-title text-center"></div>
+                            </div>
+                            <div class="m-2 flex justify-center">
+                                <a href="#"
+                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
+                                    Answer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-64 mt-3">
+                        <!--cards go here-->
+                        <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
+                            <div class="m-4">
+                                <!--class="question-title" in the JavaScript file-->
+                                <div id="question-title" class="question-title text-center"></div>
+                            </div>
+                            <div class="m-2 flex justify-center">
+                                <a href="#"
+                                    class="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
+                                    Answer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -108,14 +138,13 @@
 
     <script src="./Develop/js/script.js"></script>
 
-    <footer
-    class="bg-gray-200
+    <footer class="bg-gray-200
             text-center
             text-base
             inset-x-0
             bottom-0
             p-4">
-            <div class="text-gray-700 text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-gray-700 text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2022 Copyright:
             <a class="text-gray-800" href="https://github.com/singharaj-usai">Singharaj Usai</a>
         </div>
