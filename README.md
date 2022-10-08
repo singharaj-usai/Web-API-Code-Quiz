@@ -25,5 +25,5 @@ Repository URL: https://github.com/singharaj-usai/Web-API-Code-Quiz
 ## Made With
 
 * HTML
-* CSS
+* Pure Tailwind CSS
 * JavaScript
