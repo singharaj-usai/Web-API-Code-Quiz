@@ -45,9 +45,9 @@ function countdown() {
 
 function questionone(){
   showQuestions.textContent  = "Which of the following best describes a Web API?"
-  questionBody.children[0].textContent = "(Correct) "
-  
-  
+  questionBody.getElementsByClassName('question-title')[0].textContent = "(Correct) "
+  questionBody.getElementsByClassName('question-title')[1].textContent = "(test) "
+  questionBody.getElementsByClassName('question-title')[2].textContent = "(hi) "
 }
 
 questionone();
