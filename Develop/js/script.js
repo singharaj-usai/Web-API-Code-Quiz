@@ -43,11 +43,57 @@ function countdown() {
   }, 1000);
 }
 
+
+const correct = ()=>{
+  showQuestions.textContent  = "Correct!"
+}
+
 function questionone(){
-  showQuestions.textContent  = "Which of the following best describes a Web API?"
-  questionBody.getElementsByClassName('question-title')[0].textContent = "(Correct) "
-  questionBody.getElementsByClassName('question-title')[1].textContent = "(test) "
-  questionBody.getElementsByClassName('question-title')[2].textContent = "(hi) "
+  showQuestions.textContent  = "Which function of an Array object calls a function for each element in the array?"
+  questionBody.getElementsByClassName('question-title')[0].textContent = "map()"
+  questionBody.getElementsByClassName('question-title')[1].textContent = "forEach()"
+  questionBody.getElementsByClassName('question-title')[2].textContent = "every()"
+  
+  questionBody.addEventListener("click", function() {
+  
+    questiontwo();
+  });
+}
+
+function questiontwo(){
+  showQuestions.textContent  = "Inside which HTML element do we put the JavaScript?"
+  questionBody.getElementsByClassName('question-title')[0].textContent = "<head>"
+  questionBody.getElementsByClassName('question-title')[1].textContent = "<body>"
+  questionBody.getElementsByClassName('question-title')[2].textContent = "<script>"
+  
+  questionBody.addEventListener("click", function() {
+  
+    questionthree();
+  });
+}
+
+function questionthree(){
+  showQuestions.textContent  = "Which Variables cannot be reassigned and not accessible before they appear within the code?"
+  questionBody.getElementsByClassName('question-title')[0].textContent = "Var"
+  questionBody.getElementsByClassName('question-title')[1].textContent = "Const"
+  questionBody.getElementsByClassName('question-title')[2].textContent = "Let"
+  
+  questionBody.addEventListener("click", function() {
+  
+    questionfour();
+  });
+}
+
+function questionfour(){
+  showQuestions.textContent  = "Which String method extracts a section of a string and returns it as a new string?"
+  questionBody.getElementsByClassName('question-title')[0].textContent = "slice()"
+  questionBody.getElementsByClassName('question-title')[1].textContent = "split()"
+  questionBody.getElementsByClassName('question-title')[2].textContent = "match()"
+  
+  questionBody.addEventListener("click", function() {
+  
+    questionfive();
+  });
 }
 
 questionone();
