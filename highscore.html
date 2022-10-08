@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="py-1">
-                        <a href="highscore.html"
+                        <a href="#"
                             class="px-4 flex justify-end border-r-4 border-white hover:text-gray-400 transition ease-out duration-200">
                             <span>High Score</span>
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -68,76 +68,45 @@
 
         <main class="px-16 py-6 bg-gray-100 md:col-span-6">
             <header>
-                <div class="flex justify-center md:justify-end">
-                    <!--timer id for js-->
-                    <div id="timer"
-                        class="btn text-blue-500 border-blue-500 border-2 hover:bg-blue-300 hover:text-white transition ease-out duration-200">
-                    </div>
-                </div>
                 <h2 class="text-gray-700 text-5xl font-semibold">Web API Code Quiz</h2>
                 <h3 class="text-2xl font-semibold">For Web Dev Nerds</h3>
             </header>
 
             <h4 class="text-center font-bold mt-12 pb-2 border-b border-gray-200">JavaScript Quiz</h4>
-            <!--question-title id for JavaScript-->
-            <h5 id="questions-title" class="text-center font-bold mt-12 pb-2 border-b border-gray-200"></h5>
+            <!--highscore-title id for JavaScript-->
+            <h5 id="highscore-title" class="text-center text-xl font-bold mt-12 pb-2 border-b border-gray-200"></h5>
             <div class="flex justify-center">
                 <div id="question-title">
-
-                    <div id="question-body" class="mt-6 grid  lg:grid-cols-3 gap-5">
-                        
-                            <div class="w-64 mt-3">
-                                <!--cards go here-->
-                                <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
-                                    <div class="m-4">
-                                        <!--id="question-title" in the JavaScript file-->
-                                        <div class="question-title text-center"></div>
-                                    </div>
-                                    <div class="m-2 flex justify-center">
-                                        <div
-                                            class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                            <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
-                                            Answer
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="w-64 mt-3">
-                                <!--cards go here-->
-                                <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
-                                    <div class="m-4">
-                                        <!--id="question-title" in the JavaScript file-->
-                                        <div class="question-title text-center"></div>
-                                    </div>
-                                    <div class="m-2 flex justify-center">
-                                        <div
-                                            class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                            <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
-                                            Answer
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="w-64 mt-3">
-                                <!--cards go here-->
-                                <div class="card hover:shadow-lg transform hover:scale-105 duration-100">
-                                    <div class="m-4">
-                                        <!--id="question-title" in the JavaScript file-->
-                                        <div class="question-title text-center"></div>
-                                    </div>
-                                    <div class="m-2 flex justify-center">
-                                        <div
-                                            class="btn group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-300 hover:text-white transition ease-out duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                            <span class="absolute inset-y-0 left-0 flex items-center pl-3"></span>
-                                            Answer
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
+                    <!--div id username-things-->
+                    <div id="username-things" class="flex justify-center">
+                        <div class="text-center mb-3 xl:w-96">
+                          <label for="exampleText0" class="form-label inline-block mb-2 text-gray-700"
+                            >Text input</label
+                          >
+                          <input
+                            type="text"
+                            class="
+                              form-control
+                              block
+                              w-full
+                              px-3
+                              py-1.5
+                              text-base
+                              font-normal
+                              text-gray-700
+                              bg-white bg-clip-padding
+                              border border-solid border-gray-300
+                              rounded
+                              transition
+                              ease-in-out
+                              m-0
+                              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                            "
+                            id="exampleText0"
+                            placeholder="Input your name"
+                          />
+                        </div>
+                      </div>
                 </div>
 
             </div>
