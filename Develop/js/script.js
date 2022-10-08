@@ -48,6 +48,8 @@ const correct = ()=>{
   showQuestions.textContent  = "Correct!"
 }
 
+//TODO: Make it so when you select a choice, the card colors changes indicating correct and wrong choices
+
 function questionone(){
   showQuestions.textContent  = "Which function of an Array object calls a function for each element in the array?"
   questionBody.getElementsByClassName('question-title')[0].textContent = "map()"
