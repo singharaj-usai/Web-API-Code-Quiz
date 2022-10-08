@@ -57,7 +57,8 @@ function questionone(){
   questionBody.getElementsByClassName('question-title')[2].textContent = "every()"
   
   questionBody.addEventListener("click", function() {
-  
+  //Find out how to select index for correct answer
+  //Then use wait function so users can see the colored cards
     questiontwo();
   });
 }
