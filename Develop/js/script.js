@@ -2,7 +2,7 @@ const burger = document.querySelector('#burger');
 const menu = document.querySelector('#menu');
 
 var timerEl = document.getElementById('timer');
-
+var timeLeft = 60;
 var showQuestions = document.getElementById('questions-title');
 var questionBody = document.getElementById('question-body');
 
@@ -18,7 +18,8 @@ burger.addEventListener('click', () =>{
 
 // Timer that counts down from 5
 function countdown() {
-  var timeLeft = 60;
+
+  timeLeft--;
 
   // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
@@ -44,8 +45,17 @@ function countdown() {
 }
 
 
-const correct = ()=>{
+const correct = async ()=>{
   showQuestions.textContent  = "Correct!"
+  await delay(5000);
+  console.log("Waited 5s");
+}
+
+const incorrect = async ()=>{
+  showQuestions.textContent  = "Incorrect!"
+  timeLeft-=10;
+  await delay(5000);
+  console.log("Waited 5s");
 }
 
 //TODO: Make it so when you select a choice, the card colors changes indicating correct and wrong choices
@@ -56,11 +66,26 @@ function questionone(){
   questionBody.getElementsByClassName('question-title')[1].textContent = "forEach()"
   questionBody.getElementsByClassName('question-title')[2].textContent = "every()"
   
-  questionBody.addEventListener("click", function() {
+  questionBody.addEventListener("click", async function(event) {
   //Find out how to select index for correct answer
   //Then use wait function so users can see the colored cards
-    questiontwo();
-  });
+  var element = event.target;
+        
+  const delay = ms => new Promise(res => setTimeout(res, ms));
+
+  if (element === showQuestions.children[0]) {
+      correct();
+      await delay(5000);
+      console.log("Waited 5s");
+      questiontwo();
+  } else {
+      console.log('no')
+      incorrect();
+      await delay(5000);
+      console.log("Waited 5s");
+      questiontwo();
+  }
+});
 }
 
 function questiontwo(){
