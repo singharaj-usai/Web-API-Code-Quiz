@@ -74,6 +74,7 @@ function questionone(){
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
   if (element === showQuestions.children[0]) {
+    // How do I find the specific child of the card?? Need to work on this
       correct();
       await delay(5000);
       console.log("Waited 5s");
